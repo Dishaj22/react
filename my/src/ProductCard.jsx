@@ -1,9 +1,18 @@
-function ProductCard(props) {
+function ProductCard({ product }) {
   return (
-    <div>
-      <h2>{props.name}</h2>
-      <p>Price: {props.price}</p>
-    </div>
+    <>
+      <h2>{product.name}</h2>
+
+      <p>Price: ${product.price}</p>
+
+      {product.inStock ? (
+        <button>Buy Now</button>
+      ) : (
+        <button>Out of Stock</button>
+      )}
+
+      {product.rating >= 4.5 && <p>⭐ Top Rated</p>}
+    </>
   );
 }
 
