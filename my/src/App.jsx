@@ -200,13 +200,25 @@
 // }
 
 // export default App;
-import InteractiveForm from "./InteractiveForm";
+// import InteractiveForm from "./InteractiveForm";
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>Interactive Form</h1>
+//       <InteractiveForm />
+//     </div>
+//   );
+// }
+
+// export default App;
+import Counter from "./Counter";
 
 function App() {
   return (
     <div>
-      <h1>Interactive Form</h1>
-      <InteractiveForm />
+      <h1>Counter App</h1>
+      <Counter />
     </div>
   );
 }
